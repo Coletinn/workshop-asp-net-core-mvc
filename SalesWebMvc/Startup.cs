@@ -14,6 +14,7 @@ using System.Globalization;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvc.Data;
 using SalesWebMvc.Services;
+using SalesWebMvc.Models;
 
 namespace SalesWebMvc
 {
@@ -48,6 +49,8 @@ builder.MigrationsAssembly("SalesWebMvc")));
             services.AddScoped<SellerService>();
 
             services.AddScoped<DepartmentService>();
+
+            services.AddScoped<SalesRecordService>();
 
         }
 
